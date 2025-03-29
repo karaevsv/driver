@@ -1,0 +1,49 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Drivers.AddView">
+  <ScrollViewer>
+    <StackPanel>
+      <StackPanel Name="MainSp">
+        <Label Content="GUID"/>
+        <TextBox Text="{Binding Guid}"/>
+        <Label Content="Фамилия"/>
+        <TextBox Text="{Binding Name}"/>
+        <Label Content="Имя"/>
+        <TextBox Text="{Binding Surname}"/>
+        <Label Content="Отчество"/>
+        <TextBox Text="{Binding Patronimic}"/>
+        <Label Content="Серия паспорта"/>
+        <TextBox Text="{Binding PasportSerial}"/>
+        <Label Content="Номер паспорта"/>
+        <TextBox Text="{Binding PasportNumber}"/>
+        <Label Content="Город регистрации"/>
+        <TextBox Text="{Binding RegistrationCity}"/>
+        <Label Content="Адрес регистрации"/>
+        <TextBox Text="{Binding RegistrationAddress}"/>
+        <Label Content="Город проживания"/>
+        <TextBox Text="{Binding LivingCity}"/>
+        <Label Content="Адрес проживания"/>
+        <TextBox Text="{Binding LivingAddress}"/>
+        <Label Content="Место работы"/>
+        <TextBox Text="{Binding WorkPlace}"/>
+        <Label Content="Должность"/>
+        <TextBox Text="{Binding WorkRole}"/>
+        <Label Content="Мобильный телефон"/>
+        <TextBox Name="PhoneTb" Text="{Binding MobPhone}"/>
+        <Label Content="Email"/>
+        <TextBox Text="{Binding Email}" Name="EmailTb"/>
+        <Label Content="Фотография"/>
+        <Image Name="DriverPhoto" Width="50" Height="50"/>
+        <Button Content="Обзор..." Click="Button_Click"/>
+        <Label Content="Замечания"/>
+        <TextBox Text="{Binding Description}"/>
+      </StackPanel>
+      <Button Content="Добавить" Name="AddBtn" Click="Button_Click_1"/>
+      <Button Content="Отмена" Name="CancelBtn" Click="Button_Click_2"/>
+    </StackPanel> 
+    </ScrollViewer>
+
+</UserControl>

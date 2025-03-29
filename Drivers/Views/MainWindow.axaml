@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Drivers.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:Drivers.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Drivers.Views.MainWindow"
+        Icon="/Assets/gibdd_logo.png"
+        Title="Госавтоинспекции" MinHeight="400" MinWidth="800">
+  <Grid RowDefinitions="50, *" ColumnDefinitions="50, *, 120">
+    <Border Grid.ColumnSpan="3" Background="#85D5CA"/>
+    <Image Source="/Assets/gibdd_logo.png" Width="50"/>
+    <Label Grid.Column="1" Content="Госавтоинспекции" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Button Grid.Column="2" Content="Выход" Click="Button_Click" Background="#E0A9AF"/>
+    <ContentControl Name="MainCC" Grid.Row="1" Grid.ColumnSpan="3"/>
+  </Grid>
+</Window>
