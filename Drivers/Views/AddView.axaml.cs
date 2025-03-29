@@ -36,6 +36,7 @@ public partial class AddView : UserControl
 
             MainSp.IsEnabled = false;
             AddBtn.IsVisible = false;
+            
         }
     }
 
